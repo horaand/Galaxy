@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Galaxy Night Sky - Twinkling Stars</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <!--Background gardient layer-->
+        <div class="sky-gardient" aria-hidden="true"></div>
+
+        <!--Main canvas for stars and the Milk Way-->
+        <canvas id="galaxy"></canvas>
+
+        <!--Small on-screen HUD-->
+        <section class="hud" aria-label="Controls">
+            <h1>Galaxy Night Sky</h1>
+            <p>Move your mouse or gently touch for parallax. A meteor appears every few seconds.</p>
+            <div class="toggles">
+                <label class="toggle">
+                    <input id="toggleTwinkle" type="checkbox" checked/>
+                    <span>Star twinkling</span>
+                </label>
+                <label class="toggle">
+                    <input id="toggleMeteors" type="checkbox" checked/>
+                    <span>Meteors</span>
+                </label>
+                <label class="toggle">
+                    <input id="toggleMilky" type="checkbox" checked/>
+                    <span>Milky Way band</span>
+                </label>
+            </div>
+        </section>
+        <script src="script.js" defer></script>
+    </body>
+</html>
